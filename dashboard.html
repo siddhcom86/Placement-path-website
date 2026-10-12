@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | PlacementPath 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PlacementPath 2027</h1>
+        <p>Your personal placement dashboard</p>
+    </header>
+   
+<nav class="main-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="dsa.html">DSA</a>
+    <a href="aptitude.html">Aptitude</a>
+    <a href="english.html">English</a>
+    <a href="core-cs.html">Core CS</a>
+    <a href="planner.html">Daily Planner</a>
+</nav>
+
+<section>
+    <h2>Overall Preparation</h2>
+
+    <p id="overall-percentage">0% completed</p>
+
+    <div class="progress-bar">
+        <div id="overall-progress-fill" class="progress-fill"></div>
+    </div>
+
+    <h3>Today's Study Plans</h3>
+    <div id="dashboard-plans">
+        Loading study plans...
+    </div>
+
+    <p>
+        <a href="planner.html">Open Daily Planner →</a>
+    </p>
+    
+<!-- LEETCODE PROGRESS -->
+<div class="resource-card">
+    <h3>LeetCode Practice</h3>
+
+    <p id="leetcode-total-progress">
+        0/40 questions solved (0%)
+    </p>
+    
+<!-- DAILY STREAK TRACKER -->
+<div class="resource-card">
+    <h3>🔥 Daily Study Streak</h3>
+
+    <p id="streak-count">0 days</p>
+    <p id="streak-message">
+        Start your preparation today!
+    </p>
+
+    <button id="study-done-btn" type="button">
+        Mark Today as Studied
+    </button>
+</div>
+
+
+    <div class="progress-bar">
+        <div
+            id="leetcode-total-progress-fill"
+            class="progress-fill">
+        </div>
+    </div>
+
+    <p>
+        <a href="dsa.html">Continue DSA Practice →</a>
+    </p>
+</div>
+
+<!-- WEEKLY PREPARATION REPORT -->
+<div class="resource-card">
+    <h3>📊 Weekly Preparation Report</h3>
+
+    <p>Study days this week: <strong id="weekly-study-days">0/7</strong></p>
+
+    <p>LeetCode questions solved this week:
+        <strong id="weekly-questions-solved">0</strong>
+    </p>
+
+    <p id="weekly-report-message">
+        Start studying to build your weekly report!
+    </p>
+</div>
+
+
+</section>
+
+
+    <main>
+        <section id="dashboard">
+            <h2>Welcome Back!</h2>
+            <p>Ready to prepare for your 2027 placements?</p>
+
+            <div class="resource-list">
+                <article class="resource-card">
+                    <h3>DSA & Coding</h3>
+                    <p>Patterns, problems and coding practice.</p>
+                    <a href="dsa.html">Open DSA →</a>
+                </article>
+
+                <article class="resource-card">
+                    <h3>Aptitude & Reasoning</h3>
+                    <p>Quantitative and logical practice.</p>
+                    <a href="aptitude.html">Open Aptitude →</a>
+                </article>
+
+                <article class="resource-card">
+                    <h3>English & Verbal</h3>
+                    <p>Grammar, vocabulary and communication.</p>
+                    <a href="english.html">Open English →</a>
+                </article>
+
+                <article class="resource-card">
+                    <h3>Core CS</h3>
+                    <p>OOPs, DBMS, OS and Computer Networks.</p>
+                    <a href="core-cs.html">Open Core CS →</a>
+                </article>
+
+                <article class="resource-card">
+                    <h3>Daily Planner</h3>
+                    <p>Manage daily goals and revision.</p>
+                    <a href="planner.html">Open Planner →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>PlacementPath 2027</p>
+    </footer>
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner | PlacementPath 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily Study Planner</h1>
+        <p>Plan your study sessions and revise regularly.</p>
+        <a href="dashboard.html">← Back to Dashboard</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add a Study Plan</h2>
+
+            <form id="study-form">
+                <label for="study-date">Study Date</label>
+                <input type="date" id="study-date" required>
+
+                <label for="study-subject">Subject</label>
+                <select id="study-subject" required>
+                    <option value="">Choose a subject</option>
+                    <option value="DSA">DSA & Coding</option>
+                    <option value="Aptitude">Aptitude & Reasoning</option>
+                    <option value="English">English & Verbal</option>
+                    <option value="Core CS">Core CS</option>
+                    <option value="Project">Project Work</option>
+                </select>
+
+                <label for="study-topic">Topic or Task</label>
+                <input type="text" id="study-topic"
+                       placeholder="e.g. Practise 5 array questions" required>
+
+                <label for="study-minutes">Study Time (minutes)</label>
+                <input type="number" id="study-minutes"
+                       min="1" placeholder="e.g. 60" required>
+
+                <button type="submit">Save Study Plan</button>
+            </form>
+
+            <p id="planner-message"></p>
+        </section>
+
+        <section>
+            <h2>My Study Plans</h2>
+            <div id="study-plan-list"></div>
+        </section>
+
+        <section>
+            <h2>Add a Revision Topic</h2>
+
+            <form id="revision-form">
+                <label for="revision-subject">Subject</label>
+                <select id="revision-subject" required>
+                    <option value="">Choose a subject</option>
+                    <option value="DSA">DSA & Coding</option>
+                    <option value="Aptitude">Aptitude & Reasoning</option>
+                    <option value="English">English & Verbal</option>
+                    <option value="Core CS">Core CS</option>
+                </select>
+
+                <label for="revision-topic">Topic to Revise</label>
+                <input type="text" id="revision-topic"
+                       placeholder="e.g. OOPs concepts" required>
+
+                <button type="submit">Add Revision Topic</button>
+            </form>
+
+            <div id="revision-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>PlacementPath 2027</p>
+    </footer>
+
+    <script src="planner.js"></script>
+</body>
+</html>
+```
